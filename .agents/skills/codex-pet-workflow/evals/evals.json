@@ -1,0 +1,23 @@
+{
+  "skill_name": "codex-pet-workflow",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "我有一张角色参考图，想做一只可以导入 Codex 的 8×11 动画宠物，请从准备参考图开始规划并生成完整交付物。",
+      "expected_output": "建立 canonical base，生成 9 个标准动作、16 个方向、执行透明背景和 v2 图集 QA，并交付 pet.json 与 spritesheet.webp。",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "我已有一只 Codex 宠物，但动作太快、方向帧顺序不对，而且导入时报图集尺寸错误，请修复并重新打包。",
+      "expected_output": "先诊断 manifest 和图集尺寸，说明没有通用 FPS 字段；按需制作慢速帧保持版，修复方向顺序，验证 1536×2288 RGBA v2 后重新打包。",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "请根据多张官方角色参考图生成一个新的 Codex 宠物，要求小尺寸仍能看清脸，透明背景，最后给我可直接复制到 .codex/pets 的目录。",
+      "expected_output": "将参考图作为视觉身份依据，生成宠物安全的全身帧，完成动作与方向 QA，并交付可复制的宠物目录和验证结果。",
+      "files": []
+    }
+  ]
+}

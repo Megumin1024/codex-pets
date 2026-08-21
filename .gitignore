@@ -1,0 +1,10 @@
+# Local and generated caches
+__pycache__/
+*.pyc
+.DS_Store
+
+# Local credentials and editor settings
+.env
+.env.*
+.vscode/
+.idea/
